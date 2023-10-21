@@ -1,0 +1,111 @@
+.rightbar{
+    flex: 2.5;
+}
+
+.rightbarWrapper{
+    padding: 8vh 8vh;
+
+}
+
+.rightbarTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightbarTopLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.username a{
+    text-decoration: none;
+}
+
+.rightText{
+    opacity: .5;
+}
+
+.switch{
+    color: rgb(34, 93, 220);
+    font-size: small;
+}
+
+.rightbarCenterTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    margin-top: 20px;
+}
+
+.rightbarCenterTopLeft{
+    opacity: 0.5;
+}
+
+.rightbarCenterMain{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.follow{
+    margin-top: 20px;
+}
+
+.rightbarBottom{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: .4;
+    margin-top: 30px;
+}
+
+.rightbarBottomDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: small;
+}
+
+.miscIcon{
+    width: 5px !important;
+
+}
+
+.rightbarBottomDiv a:hover{
+    text-decoration: underline;
+}
+
+.rightbarBottomest{
+    margin-top: 20px;
+}
+
+.ig{
+    opacity: .4;
+    font-size: small;
+}
+
+.misc{
+    text-decoration: none;
+}
+
+.c{
+    border: 2px solid grey;
+    border-radius: 100px;
+    padding: .1vh .1vh;
+    font-size: xx-small;
+}

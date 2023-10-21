@@ -1,0 +1,84 @@
+@import "../../style.scss";
+
+*{
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    height: auto;
+}
+
+.write{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    border: 0px;
+    color: rgb(98, 98, 246);
+}
+
+.input{
+    height: 30px !important;
+    width: 200px !important;
+    font-size: medium;
+    margin-left: -130px;
+    border: 0px;
+    @include tablet{
+        margin-left: 10px;
+    }
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px;
+    width: 410px;
+
+}
+
+.info{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 3px;
+}
+
+.desc{
+    width: 300px;
+    height: auto;
+    background-color: black;
+}
+
+.img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.name{
+    opacity: .5;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.aloo{
+    margin-top: 10px;
+    opacity: .5;
+    font-weight: 500;
+}
+
+.date{
+    align-self: center;
+    color: gray;
+    font-size: 12px;
+}
+
+

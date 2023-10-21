@@ -1,0 +1,139 @@
+@import "../../style.scss";
+
+.post{
+    margin: 0;
+    padding: 4vh 15vh;
+    @include mobile{
+        padding: 1vh 1vh;
+        margin-right: 0;
+    }
+}
+
+.postTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.postTopLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.postText{
+    margin-top: 0 !important;
+}
+
+.postImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid  #dd2ab0;
+}
+
+.postTime{
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: small;
+}
+
+.postTimeIcon{
+    width: 5px !important;
+}
+
+.posted{
+    height: 450px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.postAtt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: large;
+}
+
+
+.postAttLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.postBottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.postText{
+    margin-top: 10px;
+    font-size: small;
+}
+
+.caption{
+    opacity: .8;
+}
+
+.comment{
+    opacity: .7;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: medium;
+    
+}
+
+.comment textarea:focus, input:focus{
+    outline: none;
+}
+
+
+.hr{
+    opacity: .3;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vh;
+}
+
+.postbtn{
+    padding: 10px;
+    width: fit-content;
+    font-size: small;
+    color: rgb(76, 76, 231);
+    border: none !important;
+}
+
+.render{
+    padding: 8px;
+}
+
+.comment1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    padding: 5px;
+}
+
+.deleteBtn{
+    border: none !important;
+}
+
+.commentList{
+    list-style-type: none;
+}

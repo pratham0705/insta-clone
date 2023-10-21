@@ -1,0 +1,55 @@
+@import "../../style.scss";
+
+.story{
+    margin: 0;
+    align-items: center;
+    overflow-x: scroll;
+    }
+
+.story::-webkit-scrollbar{
+    display: none;
+}
+
+
+.storyWrapper{
+    padding: 20px;
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+    margin-left: 20px;
+    @include mobile{
+        padding: 0;
+        margin-bottom: 10px;
+        gap: 10px;
+        margin-left: 0;
+    }
+    @include tablet{
+        margin-top: -10px;
+        gap: 15px;
+        margin-left: 65px;
+    }
+}
+
+.storyPic{
+    height: 60px ;
+    width: 60px ;
+    border-radius: 50%;
+    border: 3px solid #dd2ab0;
+    margin-right: 10px !important;
+}
+
+.storyText{
+    margin-top: 5px;
+    width: 10vh;
+    text-align: center;
+    font-size: small;
+    color: white;;
+}
+
+.storyItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

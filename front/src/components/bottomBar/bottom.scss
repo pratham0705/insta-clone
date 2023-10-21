@@ -1,0 +1,37 @@
+@import '../../style.scss';
+
+*{
+    margin: 0;
+    color: white;
+}
+
+.bottomBox{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #474747;
+    flex-direction: row !important;
+    align-items: center;
+    width: 90%;
+    gap: 40px !important;
+    margin-left: -20px;
+}
+
+#homeIcon{
+    margin-bottom: 33px;
+    height: 27px !important;
+    width: 27px !important;
+}
+
+.profileImage{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.sidebarIcon{
+    width: 27px !important;
+    height: 27px !important;
+}
+
+

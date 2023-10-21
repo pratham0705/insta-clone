@@ -1,0 +1,9 @@
+@import "../../style.scss";
+
+.feed{
+    flex:4;
+    @include mobile{
+        flex:2;
+        margin-left: 0 !important;
+    }
+}

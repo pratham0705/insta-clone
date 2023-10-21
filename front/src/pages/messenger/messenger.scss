@@ -1,0 +1,282 @@
+@import "../../style.scss";
+
+*{
+    margin: 0;
+    color: white;
+}
+
+.messenger{
+    display: flex;
+    overflow: auto;
+}
+
+.sidebar{
+    display: flex;
+    height: 100vh;
+    gap: 60px;
+    flex:.38;
+    @include mobile{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}
+
+.sidebarWrapper{
+    padding: 30px;
+}
+
+#instaIcon{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+#homeIcon{
+    margin-top: 35px;
+    width: 27px !important;
+    height: 27px !important;
+}
+
+#homeIcon1{
+    margin-top: 35px;
+    width: 27px !important;
+    margin-bottom: 0 !important;
+}
+
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: large;
+}
+
+.sidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebarListItemTextInput{
+    display: none;
+}
+
+.profileImage{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sidebarIcon{
+    width: 27px !important;
+    height: 27px !important;
+}
+
+#moreIcon1{
+    margin-top: 90px !important;
+}
+
+.vl{
+    margin-left: -75px !important;
+}
+
+.inbox{
+    display: flex;
+    flex: 1.12;
+}
+
+
+.inboxMain{
+    overflow-y: scroll;
+    height: 580px;
+}
+
+.inboxMain::-webkit-scrollbar {
+    display: none;
+}
+
+.inboxWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+
+}
+
+.inboxTopTop{
+    display: flex;
+    margin-top: 35px;
+    font-size: x-large;
+    font-weight: 400;
+    margin-left: 20px;
+    gap: 60px;
+}
+
+.inboxTopLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.downIcon{
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: -4px !important;
+    margin-right: 20px !important;
+}
+
+.inboxTopRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editIcon{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.inboxTopBottom{
+    display: flex;
+    margin-top: 35px;
+    font-size: x-large;
+    font-weight: 400;
+    gap: 230px;
+    margin-left: 20px;
+}
+
+.req{
+    opacity: .5;
+}
+
+.chatBox{
+    flex:3;
+    border-left: 1px solid rgb(45, 45, 45);
+}
+
+.chatBoxTop{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    justify-content: space-between;
+}
+
+.chatBoxTopLeft{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.infoIcon{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.chatImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+ 
+}
+
+.chatName{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bl{
+    border-right: 1px solid grey;
+    margin-left: 10px;
+    opacity: .5;
+}
+
+.chatBoxBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(58, 58, 58);
+    margin: 20px 20px;
+}
+
+.chatMessage{
+    border: 0px;
+    padding: 1vh 1vh;
+    width: 90%;
+    height: 25px;
+    font-size: medium;
+}
+
+.chatMessage:focus{
+    outline:none;
+}
+
+.sendBtn{
+    border: 0px;
+    color: rgb(74, 74, 254);
+    font-size: small;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.chatBoxWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    @include mobile{
+        width: 427px;
+    }
+}
+
+.chatBoxMain{
+    height: 570px !important;
+    overflow-y: scroll;
+}
+
+.else{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+    margin-left: 33%;
+    gap: 10px;
+    @include mobile{
+        margin-top: 250px;
+        margin-right: 100px;
+        gap: 20px;
+    }
+}
+
+.messIcon{
+    height: 60px !important;
+    width: 60px !important;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3vh;
+}
+
+.mess{
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.open{
+    font-size: medium;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.sendMess{
+    border: 0px;
+    background-color: rgb(103, 103, 255);
+    border-radius: 6px;
+    font-size: medium;
+    padding: 1vh 2vh;
+}

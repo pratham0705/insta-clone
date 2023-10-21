@@ -1,0 +1,21 @@
+.suggestion{
+    color: white;
+    margin: 0;
+}
+
+.username{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.rightbarTopLeft{
+    margin-bottom: 15px;
+}
+
+.switch{
+    border: 0px !important;
+    cursor: pointer;
+}
+
+
+

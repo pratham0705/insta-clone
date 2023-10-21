@@ -1,0 +1,36 @@
+@import "../../style.scss";
+
+.profileContainer{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    overflow: auto;
+    height: 100vh;
+    @include mobile{
+        overflow: hidden;
+    }
+}
+
+.sticky{
+    flex: 1 !important;
+    @include mobile{
+        display: none;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    @include tablet{
+        flex: 0 !important;
+    }
+}
+
+.noSticky{
+    flex: 3 !important;
+    @include mobile{
+        width: 400px;
+    }
+    @include tablet{
+        width: 600px !important;
+    }
+}

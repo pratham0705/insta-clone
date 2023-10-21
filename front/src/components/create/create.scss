@@ -1,0 +1,192 @@
+@import "../../style.scss";
+
+.createContainer{
+    color: white;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar{
+    flex:8;
+    @include mobile{
+        display: none;
+    }
+}
+
+.createRight{
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+    border-left: 1px solid rgb(40, 40, 40);
+    flex:1;
+}
+
+.share{
+    display: flex;
+    margin-left: 200px;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.shareLeft{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: -100px;
+    align-items: center;
+    justify-content: center;
+    @include mobile{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: -50px;
+    }
+}
+
+.icon1{
+    width: 80px !important;
+    height: 80px !important;
+    margin-right: 30px;
+    -webkit-transform: rotate(-15deg);  
+    -moz-transform: rotate(-15deg);  
+    -ms-transform: rotate(-15deg);  
+    transform: rotate(-15deg);
+}
+
+.icon2{
+    width: 70px !important;
+    height: 70px !important;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.h4{
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: x-large;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.shareBtn{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: rgb(116, 135, 253);
+}
+
+.select:hover{
+    background-color: rgb(71, 95, 249);
+}
+
+.shareBtn:hover{
+    background-color: rgb(71, 95, 249);
+}
+
+.select{
+    height: 30px;
+    width: 250px;
+    background-color: rgb(116, 135, 253);
+    border-radius: 6px;
+    margin-top: 50px;
+    padding: 1vh 1vh;
+}
+
+.shareRight{
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-left: 50px;
+    gap: 30px;
+    @include mobile{
+        margin-top: 100px;
+        margin-left: 60px;
+        margin-right: 0;
+        gap: 0px;
+    }
+    @include tablet{
+        margin-top: -70px;
+    }
+}
+
+.nameImg{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+    gap: 10px;
+    margin-top: -80px;
+    @include mobile{
+        margin-top: -55px;
+    }
+}
+
+.h3{
+    font-weight: 200;
+    font-size: medium;
+    margin-top: 5px;
+}
+
+.caption{
+    width: 250px;
+    height: 150px;
+    font-size: medium;
+    border: 0;
+    @include mobile{
+        margin-left: - 5px;
+    }
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    @include mobile{
+        margin-left: -10px;
+        gap: 30px;
+    }
+    @include tablet{
+        margin-left: -30px;
+    }
+}
+
+.locationText{
+    font-size: large;
+    border: 0;
+}
+
+.share2{
+    padding: 10px;
+    width: fit-content;
+    font-size: small;
+    color: rgb(76, 76, 231);
+    border: none !important;
+    margin-bottom: 40px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.shareImgContainer{
+    padding: 0px 20px 10px 20px;
+    position: relative;
+}
+
+.shareImg1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cancelIcon{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    border-radius: 50%;
+}

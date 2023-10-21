@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Fasthand');
+@import "../../style.scss";
+
+*{
+    margin: 0;
+    color: white;
+}
+
+#text1{
+    height: 100vh;
+    font-family: Fasthand, serif;
+    font-size: 35px;
+    color: rgb(249, 249, 249);
+    @include tablet{
+        display: none;
+    }
+}
+
+.instaIcon{
+    display: none !important;
+    @include tablet{
+        display: inline !important;
+        margin-bottom: 20px;
+    }
+}
+
+.sidebar{
+    flex: 2.4;
+    display: flex;
+    height: auto;
+    gap: 60px;
+    overflow: auto;
+    @include tablet{
+        flex:2;
+        overflow: hidden;
+    }
+}
+
+.sidebarWrapper{
+    padding: 30px;
+}
+
+#homeIcon{
+    margin-top: 35px;
+}
+
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: large;
+}
+
+.sidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profileImage{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sidebarIcon{
+    margin-right: 15px;
+}
+
+.sidebarListItemText{
+    font-weight: 400;
+    font-size: medium;
+    @include tablet{
+        display: none;
+    }
+}
+
+.sidebarListItem input::-webkit-input-placeholder{
+    opacity: 1;
+}
+
+.sidebarListItem input{
+    border: 0px;
+}
+
+
+#moreIcon2{
+    margin-top: 100px;
+    @include tablet{
+        margin-top: 200px !important;
+    }
+}
+
+.vl{
+    border-left: 1px solid rgba(160, 160, 160, 0.268);
+    height: 715px;
+    margin-left: -130px;
+    @include tablet{
+        height: 850px;
+    }
+}

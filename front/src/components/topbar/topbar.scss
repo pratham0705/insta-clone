@@ -1,0 +1,32 @@
+@import '../../style.scss';
+@import url('https://fonts.googleapis.com/css?family=Fasthand');
+
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#text1{
+    height: 100vh;
+    font-family: Fasthand, serif;
+    font-size: 35px;
+    color: rgb(249, 249, 249);
+}
+
+.topbarRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topbarLeft{
+    margin-left: 20px;
+}
+
+.topbarRight{
+    margin-right: 20px;
+}

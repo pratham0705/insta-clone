@@ -1,0 +1,308 @@
+@import "../../style.scss";
+
+.profileRight{
+    color: white;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include mobile{
+        padding: 0;
+    }
+    @include tablet{
+        padding: 3vh;
+    }
+}
+
+.profileRightTop{
+    display: flex;
+    padding: 0 18vh;
+    @include mobile{
+        padding: 1.5vh;
+    }
+    @include tablet{
+        padding: 0vh 2vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.profileImg{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    color: white !important;
+    background-color: white !important;
+    @include mobile{
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+}
+
+
+.profileRightTopRight{
+    display: flex;
+    flex-direction: column;
+}
+
+#profilePostTaggedIcon{
+    @include mobile{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}
+
+.profileRightTopRight1{
+    display: flex;
+    gap: 30px;
+    margin-left: 80px;
+    margin-top: 6px;
+    @include mobile{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}
+
+.profileMidlle{
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    @include mobile{
+        display: flex;
+        flex-direction: column !important;
+        height: auto !important;
+        width: auto !important;
+    }
+
+}
+
+.user{
+    display: none ;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+}
+
+.btn1{
+    display: none;
+    @include mobile{
+        display: flex;
+        width: 500px;
+        margin-top: 20px;
+    }
+}
+
+
+.profileBio{
+    display: none;
+    @include mobile{
+        display: flex;
+    }
+}
+
+.profileUsername{
+    font-size: large;
+    margin-top: 5px;
+}
+
+.profileUsername1{
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.profileButton{
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 1vh 2vh;
+    font-weight: 600;
+    border: none;
+    @include mobile{
+        padding: 1vh 4vh;
+        width: 200px;
+    }
+}
+
+.info{
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.profileButton:hover{
+    background-color: rgb(83, 83, 83);
+}
+
+.profileRightTopRight2{
+    display: flex;
+    gap: 40px;
+    margin-left: 80px;
+    margin-top: 30px;
+    @include mobile{
+        align-items: center;
+        justify-content: center;
+        margin-left: 70px;
+        gap: 20px;
+    }
+}
+
+.profileRightTopRight3{
+    display: flex;
+    gap: 40px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.highlightIcon{
+    margin-top: 50px;
+    width: 100px !important;
+    height: 100px !important;
+    margin-left: 50px;
+    @include mobile{
+        margin-left: 10px;
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+
+.new{
+    margin-left: 84px;
+    font-size: small;
+    @include mobile{
+        margin-left: 38px;
+    }
+}
+
+.hr2{
+    opacity: .3;
+    margin-top: 50px;
+    width: 1120px;
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        width: 950px;
+    }
+}
+
+.profilePost{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 93% !important;
+    gap: 10px;
+    padding: 1vh;
+    margin-left: 50px;
+    @include mobile{
+        margin-left: 16px;
+        padding: 0;
+        gap: 2px;
+    }
+    @include tablet{
+        padding: 1vh;
+        margin-left: 10px;
+        gap: 1px;
+    }
+}
+
+.profilePostImg{
+    width: 330px;
+    height: 350px;
+    @include mobile{
+        width: 131px;
+        height: 131px;
+    }
+    @include tablet{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.profilePostText{
+    display: flex;
+    flex-direction: row;
+    margin-left: 320px;
+    gap: 40px;
+    font-size: medium;
+    opacity: .6;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    @include mobile{
+        margin-left: 90px;
+        gap: 100px;
+    }
+}
+
+.profilePostTextMain{
+    display: flex;
+    gap: 10px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePostTextIcon{
+    width: 20px !important;
+}
+
+.profilePostText:hover{
+    opacity: 1;
+}
+
+.profileRightBottom{
+    display: flex;
+    margin-left: 100px;
+    opacity: .5;
+    font-size: small;
+    justify-content: center;
+    margin-left: 0px !important;
+    margin-top: 20px;
+    gap: 15px;
+    @include mobile{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.profileRightBottom a:hover{
+    text-decoration: underline;
+}
+
+.profileRightBottomest{
+    display: flex;
+    justify-content: center;
+    opacity: .5;
+    gap: 30px;
+    font-size: small;
+    margin-top: 10px;
+    @include mobile{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+#info{
+    @include mobile{
+        display: none;
+    }
+}
+
